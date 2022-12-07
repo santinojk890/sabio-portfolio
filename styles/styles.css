@@ -1,0 +1,8 @@
+@font-face{
+    font-family: exanregular;
+    src: url(Exan-Regular.ttf);
+}
+
+body{
+    font-family: "exanregular";
+}
