@@ -15,10 +15,10 @@
         </div>
         <div class="right-part-nav">
             <ul class="nav-selection">
-                <li class="nav-list">HOME</li>
-                <li class="nav-list">ABOUT</li>
-                <li class="nav-list">PROJECTS</li>
-                <li class="nav-list">CONTACT</li>
+                <li id="homeID" class="nav-list selected">HOME</li>
+                <li id="aboutID" class="nav-list">ABOUT</li>
+                <li id="projectID" class="nav-list">PROJECTS</li>
+                <li id="contactID" class="nav-list">CONTACT</li>
             </ul>
         </div>
     </div>
@@ -40,14 +40,21 @@
         </div>
 
         <div class="about page" style="display: none;">
-            <ul class="about-selection">
-                <li>HOBBIES</li>
-                <li>SKILLS</li>
-                <li>PHILOSOPHY</li>
-            </ul>
-            <div class="hobbies sec"></div>
-            <div class="skills sec"></div>
-            <div class="philosophy sec"></div>
+            <div class="left-abt">
+                <ul class="about-selection">
+                    <li>HOBBIES</li>
+                    <li>SKILLS</li>
+                    <li>EXPERIENCE</li>
+                    <li>PHILOSOPHY</li>
+                </ul>
+            </div>
+
+            <div class="left-abt">
+                <div class="hobbies sec"></div>
+                <div class="skills sec"></div>
+                <div class="experience sec"></div>
+                <div class="philosophy sec"></div>
+            </div>
         </div>
         
         <div class="projects page" style="display: none;">
@@ -69,5 +76,35 @@
         </div>
 
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $('.nav-list').on('click', function(){
+            $('.nav-list').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        $(document).ready(function(){
+        $("#homeID").click(function(){
+            $(".page").hide();
+            $(".home").show();
+        });
+
+        $("#aboutID").click(function(){
+            $(".page").hide();
+            $(".about").show();
+        });
+
+        $("#projectID").click(function(){
+            $(".page").hide();
+            $(".projects").show();
+        });
+
+        $("#contactID").click(function(){
+            $(".page").hide();
+            $(".contact").show();
+        });
+        });
+    </script>
 </body>
 </html>
