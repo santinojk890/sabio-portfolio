@@ -5,4 +5,66 @@
 
 body{
     font-family: "exanregular";
+    color: #6b6e7a;
+    background-color: #fffff9;
+    font-size: 20px;
+    margin: 108px;
+    margin-top: 54px;
+}
+
+.navigation{
+    display: flex;
+}
+
+.left-part-nav{
+    flex: 1;
+}
+
+.right-part-nav{
+    flex: 1;
+}
+
+.nav-selection{
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list{
+    flex: 1;
+    text-align: right;
+}
+
+.content-container{
+    height: auto;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+}
+
+.left-home{
+    flex: 1;
+    text-align: right;
+}
+
+.big-header{
+    color: #293041;
+    font-size: 64px;
+    margin: 15px;
+}
+
+.desc{
+    margin: 15px;
+}
+
+.right-home{
+    flex: 1;
+}
+
+.main-image{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
 }
